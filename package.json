@@ -1,0 +1,23 @@
+{
+    "name": "chat-app",
+    "version": "1.0.0",
+    "description": "Real Time Chat Application",
+    "main": "app.js",
+    "scripts": {
+        "start": "node src/app.js",
+        "dev": "env-cmd -f config/.env nodemon src/app.js",
+        "test": "env-cmd -f config/.env.test jest --watch"
+    },
+    "author": "Jordan Walters",
+    "license": "ISC",
+    "dependencies": {
+        "bad-words": "^3.0.3",
+        "express": "^4.17.1",
+        "socket.io": "^2.3.0"
+    },
+    "devDependencies": {
+        "env-cmd": "^10.1.0",
+        "jest": "^26.4.2",
+        "nodemon": "^2.0.4"
+    }
+}
