@@ -55,7 +55,6 @@ socket.on('message', (message) => {
 });
 
 socket.on('welcomeMessage', (message) => {
-    console.log(message);
     const html = Mustache.render(welcomeTemplate, {
         greeting: message.text,
         date: moment(message.createdAt).format('MMM Do'),
